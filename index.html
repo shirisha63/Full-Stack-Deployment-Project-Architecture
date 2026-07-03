@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ecommerce Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <button onclick="showPage('home')">Home</button>
+    <button onclick="showPage('products')">Products</button>
+    <button onclick="showPage('cart')">Cart</button>
+    <button onclick="toggleTheme()">🌙 Dark/Light</button>
+  </nav>
+
+  <!-- HOME SECTION -->
+  <section id="home">
+    <h1> Welcome to Ecommerce Store</h1>
+    <p>Best products available here</p>
+  </section>
+
+  <!-- PRODUCTS SECTION -->
+  <section id="productsSection">
+
+    <h2>🛒E-Commerce Product Catalog</h2>
+
+    <input 
+      type="text" 
+      id="search" 
+      placeholder="Search products..."
+    >
+
+    <div id="products"></div>
+
+  </section>
+
+  <!-- CART SECTION -->
+  <section id="cartSection">
+
+    <h2>🛒 Your Cart</h2>
+
+    <div id="cartItems"></div>
+
+    <h2 id="total">Total: ₹0</h2>
+
+  </section>
+
+  <!-- SCRIPT -->
+  <script src="app.js"></script>
+
+</body>
+</html>
